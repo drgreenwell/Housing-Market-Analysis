@@ -109,13 +109,6 @@ bedroom_demand = df['bedroom_count'].value_counts().idxmax()
 # Distribution of listings by floor
 floor_demand = df['floor'].value_counts().idxmax()
 
-# Regional variations
-# Price vs. center distance
-center_distance_influence = df[['center_distance', 'price']].corr().loc['center_distance', 'price']
-
-# Price vs. metro distance
-metro_distance_influence = df[['metro_distance', 'price']].corr().loc['metro_distance', 'price']
-
 # Correlation between age of the house and other factors
 age_corr_with_price = df[['age', 'price']].corr().loc['age', 'price']
 age_corr_with_floor = df[['age', 'floor']].corr().loc['age', 'floor']
