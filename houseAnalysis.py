@@ -80,6 +80,12 @@ sns.heatmap(df.corr(), annot=True, cmap='coolwarm', linewidths=0.5)
 plt.title('Correlation Matrix')
 plt.show()
 
+# Summary statistics for regional variations
+print("Summary statistics for Center Distance:")
+print(df['center_distance'].describe())
+print("\nSummary statistics for Metro Distance:")
+print(df['metro_distance'].describe())
+
 # Analyzing relationship between different variables
 sns.pairplot(df)
 plt.show()
@@ -102,6 +108,13 @@ bedroom_demand = df['bedroom_count'].value_counts().idxmax()
 
 # Distribution of listings by floor
 floor_demand = df['floor'].value_counts().idxmax()
+
+# Regional variations
+# Price vs. center distance
+center_distance_influence = df[['center_distance', 'price']].corr().loc['center_distance', 'price']
+
+# Price vs. metro distance
+metro_distance_influence = df[['metro_distance', 'price']].corr().loc['metro_distance', 'price']
 
 # Correlation between age of the house and other factors
 age_corr_with_price = df[['age', 'price']].corr().loc['age', 'price']
