@@ -4,7 +4,7 @@ This dataset analysis software code was written to clean up the final-house data
 
 [The final-house dataset used with this software can be found here.](https://www.kaggle.com/datasets/rukenmissonnier/final-house/data)
 
-[Software Demo Video](http://youtube.link.goes.here)
+[Housing Market Analysis Software Demo](https://youtu.be/uaCejCBi8Y4)
 
 # Data Analysis Results
 
@@ -12,8 +12,8 @@ This dataset analysis software code was written to clean up the final-house data
 - Number of Bedrooms: Houses with 17 bedrooms tend to have the highest average price.
 - Floor Level: Houses on floor 1 have the highest average price.
 - Age of the House: There is a correlation coefficient of -0.23 between age and price, indicating a slight negative influence.
-- Center Distance: There is a correlation coefficient of -0.42 between distance from center and price, indicating a moderate negative influence.
-- Metro Distance: There is a correlation coefficient of -0.15 between distance from metro and price, indicating a slight negative influence.
+- Center Distance: There is a correlation coefficient of -0.42 between distance from central or downtown area of a city or town and price, indicating a moderate negative influence.
+- Metro Distance: There is a correlation coefficient of -0.15 between distance from nearest metro or subway station and price, indicating a slight negative influence.
 
 2. What are the trends and demands in the housing market based on the given data?
 - Bedroom Demand: Houses with 2 bedrooms are most frequently listed.
