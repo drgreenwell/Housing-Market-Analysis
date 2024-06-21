@@ -80,12 +80,6 @@ sns.heatmap(df.corr(), annot=True, cmap='coolwarm', linewidths=0.5)
 plt.title('Correlation Matrix')
 plt.show()
 
-# Summary statistics for regional variations
-print("Summary statistics for Center Distance:")
-print(df['center_distance'].describe())
-print("\nSummary statistics for Metro Distance:")
-print(df['metro_distance'].describe())
-
 # Analyzing relationship between different variables
 sns.pairplot(df)
 plt.show()
@@ -126,8 +120,8 @@ print("1. What factors influence house prices the most in this dataset?")
 print(f"- Number of Bedrooms: Houses with {bedroom_influence} bedrooms tend to have the highest average price.")
 print(f"- Floor Level: Houses on floor {floor_influence} have the highest average price.")
 print(f"- Age of the House: There is a correlation coefficient of {age_influence:.2f} between age and price, indicating a slight negative influence.")
-print(f"- Center Distance: There is a correlation coefficient of {center_distance_influence:.2f} between distance from center and price, indicating a moderate negative influence.")
-print(f"- Metro Distance: There is a correlation coefficient of {metro_distance_influence:.2f} between distance from metro and price, indicating a slight negative influence.")
+print(f"- Center Distance: There is a correlation coefficient of {center_distance_influence:.2f} between distance from central or downtown area of a city or town and price, indicating a moderate negative influence.")
+print(f"- Metro Distance: There is a correlation coefficient of {metro_distance_influence:.2f} between distance from nearest metro or subway station and price, indicating a slight negative influence.")
 
 print("\n2. What are the trends and demands in the housing market based on the given data?")
 print(f"- Bedroom Demand: Houses with {bedroom_demand} bedrooms are most frequently listed.")
