@@ -80,12 +80,6 @@ sns.heatmap(df.corr(), annot=True, cmap='coolwarm', linewidths=0.5)
 plt.title('Correlation Matrix')
 plt.show()
 
-# Summary statistics for regional variations
-print("Summary statistics for Center Distance:")
-print(df['center_distance'].describe())
-print("\nSummary statistics for Metro Distance:")
-print(df['metro_distance'].describe())
-
 # Analyzing relationship between different variables
 sns.pairplot(df)
 plt.show()
