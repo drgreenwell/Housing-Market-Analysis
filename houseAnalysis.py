@@ -103,7 +103,6 @@ bedroom_demand = df['bedroom_count'].value_counts().idxmax()
 # Distribution of listings by floor
 floor_demand = df['floor'].value_counts().idxmax()
 
-# Regional variations
 # Price vs. center distance
 center_distance_influence = df[['center_distance', 'price']].corr().loc['center_distance', 'price']
 
